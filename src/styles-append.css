@@ -1,0 +1,162 @@
+
+/* Add these styles to the end of index.css */
+
+/* Countdown Section */
+.countdown-section {
+  padding: 5rem 2rem;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+.countdown-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.countdown-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.countdown-value {
+  font-size: 2.2rem;
+  font-weight: 300;
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-unit {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted-color);
+}
+
+.countdown-finished {
+  font-size: 1.2rem;
+  font-family: var(--font-serif);
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+/* Event Section */
+.event-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.event-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .event-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.event-card {
+  flex: 1;
+  background-color: var(--bg-color);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+}
+
+.event-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--text-color);
+}
+
+.info-item svg {
+  color: var(--accent-color);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.info-item span, .info-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.venue-info strong {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.venue-info p {
+  color: var(--muted-color);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .countdown-grid { gap: 0.5rem; }
+  .countdown-item { padding: 1rem 0.5rem; }
+  .countdown-value { font-size: 1.8rem; }
+  .countdown-unit { font-size: 0.65rem; }
+  .event-card { padding: 2rem 1.5rem; }
+}

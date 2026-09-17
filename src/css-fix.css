@@ -1,0 +1,51 @@
+.btn-outline:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .countdown-grid { 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem; 
+  }
+  .countdown-item { padding: 1.2rem 1rem; }
+  .countdown-value { font-size: 2rem; }
+  .countdown-unit { font-size: 0.7rem; }
+  
+  .event-card { padding: 2.5rem 1.5rem; }
+  .btn-outline { 
+    width: 100%; 
+    display: block; 
+    text-align: center; 
+  }
+}
+
+/* Quote Section */
+.quote-section {
+  padding: 6rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.quote-source {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted-color);
+  font-weight: 500;
+}

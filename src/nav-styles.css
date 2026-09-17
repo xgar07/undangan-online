@@ -1,0 +1,42 @@
+
+/* Floating Nav */
+.floating-nav {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  z-index: 40;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.floating-nav button {
+  color: var(--muted-color);
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-nav button:hover, .floating-nav button:focus {
+  color: var(--accent-color);
+  background: rgba(167, 139, 91, 0.1);
+}
+
+@media (max-width: 480px) {
+  .floating-nav {
+    width: 90%;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0.8rem 1.2rem;
+    bottom: 1.5rem;
+  }
+}

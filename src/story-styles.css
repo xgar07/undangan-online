@@ -1,0 +1,148 @@
+
+/* Common Section Title */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Story Section */
+.story-section {
+  padding: 5rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.story-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 22px;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(167, 139, 91, 0.3); /* accent-color with opacity */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: 3px solid var(--bg-color);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+.timeline-content {
+  padding-left: 3.5rem;
+}
+
+.timeline-year {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: var(--accent-color);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted-color);
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    padding-left: 0;
+  }
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .timeline-dot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline-content {
+    width: 45%;
+    padding-left: 0;
+  }
+  .timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+  }
+}
+
+/* Dress Code Section */
+.dresscode-section {
+  padding: 5rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.dresscode-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dresscode-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--muted-color);
+  margin-bottom: 2rem;
+}
+
+.color-palette {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+}

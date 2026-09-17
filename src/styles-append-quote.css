@@ -1,0 +1,30 @@
+
+/* Quote Section */
+.quote-section {
+  padding: 6rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.quote-source {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted-color);
+  font-weight: 500;
+}

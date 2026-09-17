@@ -1,0 +1,210 @@
+
+/* RSVP & Guestbook Sections */
+.rsvp-section {
+  padding: 5rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.guestbook-section {
+  padding: 5rem 2rem 8rem 2rem;
+  background-color: #fff;
+}
+
+.rsvp-container, .guestbook-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rsvp-subtitle, .guestbook-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--muted-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(167, 139, 91, 0.1);
+}
+
+.input-error {
+  border-color: #e74c3c !important;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 400 !important;
+}
+
+.char-counter {
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--muted-color);
+  margin-top: 0.3rem;
+}
+
+.btn-solid {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-solid:hover:not(:disabled) {
+  background-color: #8f764a;
+}
+
+.btn-solid:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.rsvp-success {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255,255,255,0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.8);
+}
+
+.rsvp-success h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/* Guestbook List */
+.guestbook-list {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: var(--bg-color);
+  border-radius: 12px;
+}
+
+.empty-state h4 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}
+
+.guestbook-card {
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 0.5rem;
+}
+
+.card-name {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: var(--muted-color);
+}
+
+.card-message {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  white-space: pre-wrap; /* Keeps newlines */
+}
+
+.toast-message {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 480px) {
+  .radio-group {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}

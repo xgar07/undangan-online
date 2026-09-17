@@ -1,0 +1,20 @@
+
+.countdown-recap {
+  margin-bottom: 2rem;
+}
+.recap-date {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+.recap-events {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.recap-divider {
+  margin: 0 10px;
+  color: var(--accent-color);
+}
